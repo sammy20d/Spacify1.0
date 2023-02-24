@@ -4,18 +4,17 @@ import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
+import org.uci.spacify.utilities.Constants;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import static org.uci.spacify.utilities.Constants.SCHEMA_NAME;
-
 @Getter
 @Setter
 @Entity
-@Table(name = "User", schema = SCHEMA_NAME)
+@Table(name = "User", schema = Constants.SCHEMA_NAME)
 public class UserEntity {
     @Id
     @Column(name="user_id")

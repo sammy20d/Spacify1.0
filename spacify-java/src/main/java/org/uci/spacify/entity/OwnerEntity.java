@@ -2,15 +2,14 @@ package org.uci.spacify.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.uci.spacify.utilities.Constants;
 
 import javax.persistence.*;
-
-import static org.uci.spacify.utilities.Constants.SCHEMA_NAME;
 
 @Getter
 @Setter
 @Entity
-@Table(name="owner", schema=SCHEMA_NAME)
+@Table(name="owner", schema= Constants.SCHEMA_NAME)
 public class OwnerEntity {
     @EmbeddedId
     private UserRoomPK userRoomPK;

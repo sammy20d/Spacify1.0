@@ -95,7 +95,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        org.uci.spacify.Main
+                                        org.uci.spacifyEngine.Main
                                     </mainClass>
                                 </manifest>
                             </archive>

@@ -1,14 +1,13 @@
 package org.uci.spacify.entity;
 
 import com.sun.istack.NotNull;
+import org.uci.spacify.utilities.Constants;
 
 import javax.persistence.*;
 import java.util.Date;
 
-import static org.uci.spacify.utilities.Constants.SCHEMA_NAME;
-
 @Entity
-@Table(name="incentive", schema = SCHEMA_NAME)
+@Table(name="incentive", schema = Constants.SCHEMA_NAME)
 public class IncentiveEntity {
     @Id
     @Column(name = "incentive_id")

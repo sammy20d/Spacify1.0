@@ -3,16 +3,15 @@ package org.uci.spacify.entity;
 import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
+import org.uci.spacify.utilities.Constants;
 
 import javax.persistence.*;
 import java.util.Date;
 
-import static org.uci.spacify.utilities.Constants.SCHEMA_NAME;
-
 @Getter
 @Setter
 @Entity
-@Table(name="reservation", schema=SCHEMA_NAME)
+@Table(name="reservation", schema= Constants.SCHEMA_NAME)
 public class ReservationEntity {
     @Id
     @Column(name = "reservation_id")
